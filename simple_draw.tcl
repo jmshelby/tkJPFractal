@@ -3,6 +3,8 @@ set info(units) 3
 set bufferList ""
 set directionList ""
 
+wm minsize . 600 1000
+
 canvas .c -background black
 pack .c -expand yes -fill both
 .c create line [lindex $info(currentCoords) 0] [lindex $info(currentCoords) 1] [lindex $info(currentCoords) 0] [lindex $info(currentCoords) 1] -tag line -fill green
